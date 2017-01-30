@@ -1,15 +1,18 @@
 // initialize variable
-var buttonOne,buttonTwo, buttonThree, audio, playbtn;
-// get elements by Id
-buttonOne = document.getElementById('first');
-buttonTwo = document.getElementById('second');
-buttonThree = document.getElementById('third');
+var buttonOne,buttonTwo, buttonThree, audio;
 //define functions
-function AudioPlayer1() {
+function Boom() {
   audio = new Audio();
   audio.src = "drum-sounds/boom.wav";
-}
-// control button one events on mouseenter
-buttonOne.addEventListener('mouseenter', AudioPlayer1 ());
-// control button two events on click
-buttonOne.addEventListener('click', AudioPlayer1());
+  audio.play();
+};
+function Clap() {
+  audio = new Audio();
+  audio.src = "drum-sounds/clap.wav";
+  audio.play();
+};
+function Tink() {
+  audio = new Audio();
+  audio.src = "drum-sounds/tink.wav";
+  audio.play();
+};
