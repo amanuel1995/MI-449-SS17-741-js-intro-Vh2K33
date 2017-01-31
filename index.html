@@ -8,9 +8,14 @@
   <body>
     <h1>virtual drum kit</h1>
     <div class="container-fluid">
-      <button onclick="Boom()" onmouseover="Boom()" type="button" class="btn btn-primary" id="first">Boom</button>
-      <button onclick="Clap()" onmouseover="Clap()" type="button" class="btn btn-primary" id="second">Clap</button>
-      <button onclick="Tink" onmouseover="Tink()" type="button" class="btn btn-primary" id="third">Tink</button>
+      <!-- audio files -->
+      <audio src="drum-sounds/boom.wav" id="boom"></audio>
+      <audio src="drum-sounds/clap.wav" id="clap"></audio>
+      <audio src="drum-sounds/tink.wav" id="tink"></audio>
+      <!-- buttons -->
+      <button type="button" class="btn btn-primary" id="first">Boom</button>
+      <button type="button" class="btn btn-primary" id="second">Clap</button>
+      <button type="button" class="btn btn-primary" id="third">Tink</button>
     </div>
   </body>
   <script src="script.js" type="text/javascript">
